@@ -1,4 +1,4 @@
-window.DASHU_PRODUCTS = [
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory();else root.DASHU_PRODUCTS=factory();})(typeof window!=='undefined'?window:this,function(){return [
   {
     "id": "scalp-shampoo",
     "name": "Anti Hair Loss Scalp Shampoo",
@@ -750,4 +750,4 @@ window.DASHU_PRODUCTS = [
     "image": "assets/products/product-32.jpg",
     "sourcePage": 32
   }
-];
+];});
