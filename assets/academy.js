@@ -39,7 +39,6 @@
   });
   dialog.querySelector('.academy-collection-link').addEventListener('click', () => {
     dialog.close();
-    location.hash = 'collection';
-    document.getElementById('collection').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    location.href = 'catalog.html';
   });
 })();
