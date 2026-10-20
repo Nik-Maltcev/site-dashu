@@ -23,3 +23,9 @@ Photos are resized to at most 1400 pixels and converted to JPEG in the browser, 
 Requests have body/message limits and a 40-second provider timeout. A best-effort in-memory limit allows 30 requests per IP per 10 minutes per function instance; it is not a distributed spending cap. For a public launch, configure Vercel WAF rate limits and the provider's spending controls. Use the optional access code for a closed preview.
 
 Run `node --test tests/stylist.test.cjs` for validation, recommendation filtering and provider-adapter checks. These tests mock provider responses; a real key is required for live verification.
+
+## FTP hosting
+
+For PHP shared hosting, upload the seven HTML pages and `assets/`, and place `hosting/stylist.php` at `api/stylist.php`. In the hosting copy of `stylist.html`, add `data-api-endpoint="/api/stylist.php"` to `#stylist-form` and update the script cache version. Apache hosts can also use `hosting/.htaccess`; Nginx hosts need the explicit PHP URL. Enable PHP execution for the domain in the hosting panel. Do not upload `.env` files, Git data, Node source, tests or development scripts.
+
+The PHP gateway forwards consultation requests over verified HTTPS to the existing `dashu-showcase-one.vercel.app` backend. The DeepSeek key remains in Vercel; the FTP host does not need a copy. The gateway stores neither photos nor conversations and preserves the backend's validation and response format. Keep that Vercel project active. Its existing per-instance consultation rate limit also applies to requests through the gateway. Enable a trusted TLS certificate for the public domain before accepting personal photos.

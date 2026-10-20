@@ -2,6 +2,7 @@
   'use strict';
   const log=document.getElementById('stylist-messages'),form=document.getElementById('stylist-form'),input=document.getElementById('stylist-input'),options=document.getElementById('stylist-options'),send=document.getElementById('stylist-send'),errorBox=document.getElementById('stylist-error'),status=document.getElementById('stylist-status');
   if (!form)return;
+  const apiEndpoint=form.dataset.apiEndpoint||'/api/stylist';
   let history=[],photo=null,pendingPhoto=false,busy=false,available=false,accessRequired=false,accessCode='',failed=false,controller,session=0;
   const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const money=n=>new Intl.NumberFormat('ru-RU').format(n)+' ₽';
@@ -41,7 +42,7 @@
     const loading=document.createElement('div');loading.className='stylist-busy';loading.textContent='Уточняем детали';loading.setAttribute('role','status');log.append(loading);scrollLog();
     controller=new AbortController();const timer=setTimeout(()=>controller.abort(),50000);
     try{
-      const response=await fetch('/api/stylist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history,image:photo,photoConsent:!photo||consent.checked,accessCode}),signal:controller.signal});
+      const response=await fetch(apiEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history,image:photo,photoConsent:!photo||consent.checked,accessCode}),signal:controller.signal});
       const data=await response.json();if(active!==session)return;
       if(!response.ok){if(response.status===401){accessRequired=true;document.getElementById('stylist-access').hidden=false;}throw Error(data.error||'Не получилось продолжить подбор.');}
       if(typeof data.message!=='string'||!Array.isArray(data.options)||!Array.isArray(data.recommendations))throw Error('Не удалось прочитать ответ. Попробуй ещё раз.');
@@ -70,7 +71,7 @@
   });
   document.getElementById('stylist-unlock').addEventListener('click',()=>{accessCode=document.getElementById('stylist-access-code').value.trim();if(!accessCode)return;accessRequired=false;document.getElementById('stylist-access').hidden=true;errorBox.hidden=true;setBusy(false);showOptions(['Матовая текстура','Больше объёма','Гладкая укладка','Пока не знаю']);});
   async function connect(){
-    try{const response=await fetch('/api/stylist',{signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error();const config=await response.json();available=config.available===true;accessRequired=config.accessRequired===true;if(!available)showError('Консультация пока не подключена. Скоро здесь можно будет подобрать средство по фото и пожеланиям.');document.getElementById('stylist-access').hidden=!accessRequired;}
+    try{const response=await fetch(apiEndpoint,{signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error();const config=await response.json();available=config.available===true;accessRequired=config.accessRequired===true;if(!available)showError('Консультация пока не подключена. Скоро здесь можно будет подобрать средство по фото и пожеланиям.');document.getElementById('stylist-access').hidden=!accessRequired;}
     catch(_){showError('Консультация недоступна. Попробуй открыть сайт позже.');}
     setBusy(false);showOptions(['Матовая текстура','Больше объёма','Гладкая укладка','Пока не знаю']);
   }
