@@ -1,14 +1,34 @@
 const {validateInput,consult}=require('../lib/stylist.cjs');
 const rateWindows=new Map();
+const corsOrigins=new Set(['https://dashurussia.ru']);
 function send(res,status,data) {res.statusCode=status;res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');res.end(JSON.stringify(data));}
 module.exports=async (req,res)=>{
   const key=process.env.DEEPSEEK_API_KEY;
+  const origin=req.headers.origin;
+  let sameOrigin=false;
+  try {const url=new URL(origin);sameOrigin=['http:','https:'].includes(url.protocol)&&url.origin===origin&&url.host===req.headers.host;}catch(_){}
+  const trustedOrigin=sameOrigin||corsOrigins.has(origin);
+  res.setHeader('Vary','Origin');
+  if (corsOrigins.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin',origin);
+    res.setHeader('Access-Control-Expose-Headers','Retry-After');
+  }
+  if (req.method==='OPTIONS') {
+    if (!trustedOrigin) return send(res,403,{error:'Открой консультацию на сайте DASHU.'});
+    if (!['GET','POST'].includes(req.headers['access-control-request-method'])) return send(res,405,{error:'Метод не поддерживается.'});
+    const requestedHeaders=String(req.headers['access-control-request-headers']||'').toLowerCase().split(',').map(h=>h.trim()).filter(Boolean);
+    if (requestedHeaders.some(h=>h!=='content-type')) return send(res,403,{error:'Заголовки не поддерживаются.'});
+    res.setHeader('Access-Control-Allow-Methods','GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers','Content-Type');
+    res.setHeader('Access-Control-Max-Age','600');
+    res.setHeader('Cache-Control','no-store');
+    res.statusCode=204;return res.end();
+  }
   if (req.method==='GET') return send(res,200,{available:!!key,accessRequired:!!process.env.STYLIST_ACCESS_CODE});
-  if (req.method!=='POST') {res.setHeader('Allow','GET, POST');return send(res,405,{error:'Метод не поддерживается.'});}
+  if (req.method!=='POST') {res.setHeader('Allow','GET, POST, OPTIONS');return send(res,405,{error:'Метод не поддерживается.'});}
   if (!key) return send(res,503,{error:'Консультация пока не подключена. Загляни чуть позже.'});
   try {
-    const origin=req.headers.origin;
-    if (!origin || new URL(origin).host!==req.headers.host) return send(res,403,{error:'Открой консультацию на сайте DASHU.'});
+    if (!trustedOrigin) return send(res,403,{error:'Открой консультацию на сайте DASHU.'});
     if (!String(req.headers['content-type']||'').startsWith('application/json')) return send(res,415,{error:'Нужен JSON-запрос.'});
     if (Number(req.headers['content-length']||0)>2400000) return send(res,413,{error:'Фото слишком большое. Попробуй другой снимок.'});
     let body;

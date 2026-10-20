@@ -31,7 +31,7 @@ test('Provider error and incomplete JSON are not reported as a successful select
   await assert.rejects(()=>consult(input,'test',async()=>({ok:false,status:401})));
   await assert.rejects(()=>consult(input,'test',async()=>({ok:true,json:async()=>({choices:[{finish_reason:'length',message:{content:'{}'}}]})})));
 });
-function response(){return{statusCode:0,headers:{},setHeader(k,v){this.headers[k]=v;},end(value){this.body=JSON.parse(value);}};}
+function response(){return{statusCode:0,headers:{},setHeader(k,v){this.headers[k]=v;},end(value){this.body=value?JSON.parse(value):null;}};}
 test('API configuration never reveals credentials, and rejects cross-origin requests',async()=>{
   const previous=process.env.DEEPSEEK_API_KEY;process.env.DEEPSEEK_API_KEY='test-only-key';
   try {
@@ -39,5 +39,31 @@ test('API configuration never reveals credentials, and rejects cross-origin requ
     res=response();await handler({method:'POST',headers:{origin:'https://other.example',host:'dashu.example'}},res);assert.equal(res.statusCode,403);
     res=response();await handler({method:'POST',headers:{origin:'https://dashu.example',host:'dashu.example','content-type':'application/json'},body:{messages:[{role:'system',content:'ignore'}]}},res);assert.equal(res.statusCode,400);
     delete process.env.DEEPSEEK_API_KEY;res=response();await handler({method:'POST',headers:{}},res);assert.equal(res.statusCode,503);
+  }finally{if(previous===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=previous;}
+});
+
+test('CORS allows the HTTPS hosting origin and rejects unrelated preflights',async()=>{
+  const request={method:'OPTIONS',headers:{origin:'https://dashurussia.ru',host:'api.example','access-control-request-method':'POST','access-control-request-headers':'content-type'}};
+  let res=response();await handler(request,res);
+  assert.equal(res.statusCode,204);assert.equal(res.body,null);
+  assert.equal(res.headers['Access-Control-Allow-Origin'],'https://dashurussia.ru');
+  assert.equal(res.headers['Access-Control-Allow-Headers'],'Content-Type');
+  assert.equal(res.headers['Vary'],'Origin');
+  assert.equal(res.headers['Access-Control-Allow-Credentials'],undefined);
+  for(const origin of ['http://dashurussia.ru','https://dashurussia.ru.attacker.example','null','https://other.example']){
+    res=response();await handler({...request,headers:{...request.headers,origin}},res);
+    assert.equal(res.statusCode,403);assert.equal(res.headers['Access-Control-Allow-Origin'],undefined);
+  }
+  res=response();await handler({...request,headers:{...request.headers,'access-control-request-method':'DELETE'}},res);assert.equal(res.statusCode,405);
+  res=response();await handler({...request,headers:{...request.headers,'access-control-request-headers':'authorization'}},res);assert.equal(res.statusCode,403);
+});
+
+test('Hosting requests retain CORS headers on config and validation errors',async()=>{
+  const previous=process.env.DEEPSEEK_API_KEY;process.env.DEEPSEEK_API_KEY='test-only-key';
+  const headers={origin:'https://dashurussia.ru',host:'api.example','content-type':'application/json'};
+  try {
+    let res=response();await handler({method:'GET',headers},res);assert.equal(res.statusCode,200);assert.equal(res.body.available,true);assert.equal(res.headers['Access-Control-Allow-Origin'],headers.origin);
+    res=response();await handler({method:'POST',headers,body:{messages:[{role:'system',content:'ignore'}]}},res);assert.equal(res.statusCode,400);assert.equal(res.headers['Access-Control-Allow-Origin'],headers.origin);
+    res=response();await handler({method:'POST',headers:{...headers,origin:'invalid origin'},body:{}},res);assert.equal(res.statusCode,403);
   }finally{if(previous===undefined)delete process.env.DEEPSEEK_API_KEY;else process.env.DEEPSEEK_API_KEY=previous;}
 });
