@@ -1,9 +1,9 @@
 
 (() => {
   const guides = {
-    classic: {title:'SIDE-PART & SLICK BACK',category:'01 / КЛАССИКА',image:'assets/academy-classic.png',alt:'Барбер укладывает волосы клиента',steps:['Разотри небольшое количество помады в ладонях.','Распредели по волосам от корней к кончикам.','Задай пробор и направление укладки расчёской.']},
-    texture: {title:'CROP & MESSY TEXTURE',category:'02 / ТЕКСТУРА',image:'assets/academy-texture.png',alt:'Руки формируют текстуру волос',steps:['Высуши волосы, сохраняя естественное направление прядей.','Разогрей небольшое количество матового воска в ладонях.','Выдели отдельные пряди пальцами и придай им движение.']},
-    care: {title:'ТВОЁ УТРО. ТРИ МИНУТЫ.',category:'03 / УХОД',image:'assets/academy-care.png',alt:'Мужчина наносит пенку на лицо',steps:['Вспень очищающее средство в ладонях с водой.','Мягко очисти лицо, смой пенку и промокни кожу полотенцем.','Нанеси All-in-One лосьон после очищения.']}
+    classic: {title:'SIDE-PART & SLICK BACK',category:'01 / КЛАССИКА',image:'assets/academy-classic.webp',alt:'Барбер укладывает волосы клиента',steps:['Разотри небольшое количество помады в ладонях.','Распредели по волосам от корней к кончикам.','Задай пробор и направление укладки расчёской.']},
+    texture: {title:'CROP & MESSY TEXTURE',category:'02 / ТЕКСТУРА',image:'assets/academy-texture.webp',alt:'Руки формируют текстуру волос',steps:['Высуши волосы, сохраняя естественное направление прядей.','Разогрей небольшое количество матового воска в ладонях.','Выдели отдельные пряди пальцами и придай им движение.']},
+    care: {title:'ТВОЁ УТРО. ТРИ МИНУТЫ.',category:'03 / УХОД',image:'assets/academy-care.webp',alt:'Мужчина наносит пенку на лицо',steps:['Вспень очищающее средство в ладонях с водой.','Мягко очисти лицо, смой пенку и промокни кожу полотенцем.','Нанеси All-in-One лосьон после очищения.']}
   };
   const dialog = document.getElementById('academy-dialog');
   if (!dialog) return;
@@ -17,6 +17,8 @@
       document.getElementById('guide-title').textContent = guide.title;
       document.getElementById('guide-category').textContent = guide.category;
       const image = document.getElementById('guide-image');
+      image.removeAttribute('srcset');
+      image.decoding = 'async';
       image.src = guide.image;
       image.alt = guide.alt;
       document.getElementById('guide-steps').replaceChildren(...guide.steps.map(text => {

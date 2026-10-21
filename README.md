@@ -10,6 +10,8 @@ Cart contains only product IDs, volume choices and quantities, saved in localSto
 
 Academy images are AI-generated demonstration assets. Existing versions remain in the separate local presentation archive.
 
+Images use WebP with responsive width variants, explicit dimensions and asynchronous decoding. The hero has high fetch priority; lower sections and product grids load images lazily. Product volume changes update both the image and its responsive sources. Original PNG/JPEG files are retained as source material. Run `python scripts/optimize-images.py` with Pillow installed to rebuild WebP assets, the image manifest and catalogue image metadata. Active full-size images total about 1.15 MB instead of 13.44 MB; smaller responsive candidates reduce transfer further.
+
 ## Personal stylist
 
 `stylist.html` provides a conversational product selection with optional hair photo upload. It calls the same-origin Vercel Function `/api/stylist`, which uses DeepSeek V4.1 Flash (`deepseek-flash`). Recommendations are restricted to real hair products in the shared catalogue. There is no simulated model fallback.

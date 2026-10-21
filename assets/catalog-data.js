@@ -11,7 +11,10 @@
       {
         "label": "500 мл",
         "price": 3990,
-        "image": "assets/products/product-08.jpg"
+        "image": "assets/products/product-08.webp",
+        "imageWidth": 1122,
+        "imageHeight": 1122,
+        "imageSrcset": "assets/products/product-08-240.webp 240w, assets/products/product-08-480.webp 480w, assets/products/product-08-800.webp 800w, assets/products/product-08.webp 1122w"
       }
     ],
     "specs": [
@@ -28,8 +31,11 @@
         "Чистота и комфорт кожи головы"
       ]
     ],
-    "image": "assets/products/product-08.jpg",
-    "sourcePage": 8
+    "image": "assets/products/product-08.webp",
+    "sourcePage": 8,
+    "imageWidth": 1122,
+    "imageHeight": 1122,
+    "imageSrcset": "assets/products/product-08-240.webp 240w, assets/products/product-08-480.webp 480w, assets/products/product-08-800.webp 800w, assets/products/product-08.webp 1122w"
   },
   {
     "id": "daily-shampoo",
@@ -43,7 +49,10 @@
       {
         "label": "500 мл",
         "price": 3490,
-        "image": "assets/products/product-09.jpg"
+        "image": "assets/products/product-09.webp",
+        "imageWidth": 1122,
+        "imageHeight": 1122,
+        "imageSrcset": "assets/products/product-09-240.webp 240w, assets/products/product-09-480.webp 480w, assets/products/product-09-800.webp 800w, assets/products/product-09.webp 1122w"
       }
     ],
     "specs": [
@@ -60,8 +69,11 @@
         "Свежесть без пересушивания"
       ]
     ],
-    "image": "assets/products/product-09.jpg",
-    "sourcePage": 9
+    "image": "assets/products/product-09.webp",
+    "sourcePage": 9,
+    "imageWidth": 1122,
+    "imageHeight": 1122,
+    "imageSrcset": "assets/products/product-09-240.webp 240w, assets/products/product-09-480.webp 480w, assets/products/product-09-800.webp 800w, assets/products/product-09.webp 1122w"
   },
   {
     "id": "grooming-tonic",
@@ -75,7 +87,10 @@
       {
         "label": "200 мл",
         "price": 3290,
-        "image": "assets/products/product-10.jpg"
+        "image": "assets/products/product-10.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-10-240.webp 240w, assets/products/product-10-480.webp 480w, assets/products/product-10-800.webp 800w, assets/products/product-10.webp 1000w"
       }
     ],
     "specs": [
@@ -92,8 +107,11 @@
         "Все типы / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-10.jpg",
-    "sourcePage": 10
+    "image": "assets/products/product-10.webp",
+    "sourcePage": 10,
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-10-240.webp 240w, assets/products/product-10-480.webp 480w, assets/products/product-10-800.webp 800w, assets/products/product-10.webp 1000w"
   },
   {
     "id": "tonic-foam",
@@ -107,7 +125,10 @@
       {
         "label": "200 мл",
         "price": 3290,
-        "image": "assets/products/product-11.jpg"
+        "image": "assets/products/product-11.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-11-240.webp 240w, assets/products/product-11-480.webp 480w, assets/products/product-11-800.webp 800w, assets/products/product-11.webp 1000w"
       }
     ],
     "specs": [
@@ -124,8 +145,11 @@
         "Тонкие и нормальные / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-11.jpg",
-    "sourcePage": 11
+    "image": "assets/products/product-11.webp",
+    "sourcePage": 11,
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-11-240.webp 240w, assets/products/product-11-480.webp 480w, assets/products/product-11-800.webp 800w, assets/products/product-11.webp 1000w"
   },
   {
     "id": "volume-tonic",
@@ -139,7 +163,10 @@
       {
         "label": "200 мл",
         "price": 3490,
-        "image": "assets/products/product-12.jpg"
+        "image": "assets/products/product-12.webp",
+        "imageWidth": 832,
+        "imageHeight": 999,
+        "imageSrcset": "assets/products/product-12-240.webp 240w, assets/products/product-12-480.webp 480w, assets/products/product-12-800.webp 800w, assets/products/product-12.webp 832w"
       }
     ],
     "specs": [
@@ -156,8 +183,11 @@
         "Тонкие, без объёма / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-12.jpg",
-    "sourcePage": 12
+    "image": "assets/products/product-12.webp",
+    "sourcePage": 12,
+    "imageWidth": 832,
+    "imageHeight": 999,
+    "imageSrcset": "assets/products/product-12-240.webp 240w, assets/products/product-12-480.webp 480w, assets/products/product-12-800.webp 800w, assets/products/product-12.webp 832w"
   },
   {
     "id": "power-wax",
@@ -171,12 +201,18 @@
       {
         "label": "100 мл",
         "price": 4290,
-        "image": "assets/products/product-13.jpg"
+        "image": "assets/products/product-13.webp",
+        "imageWidth": 1067,
+        "imageHeight": 1600,
+        "imageSrcset": "assets/products/product-13-240.webp 240w, assets/products/product-13-480.webp 480w, assets/products/product-13-800.webp 800w, assets/products/product-13.webp 1067w"
       },
       {
         "label": "15 мл",
         "price": 1490,
-        "image": "assets/products/product-13-mini.jpg"
+        "image": "assets/products/product-13-mini.webp",
+        "imageWidth": 348,
+        "imageHeight": 305,
+        "imageSrcset": "assets/products/product-13-mini-240.webp 240w, assets/products/product-13-mini.webp 348w"
       }
     ],
     "specs": [
@@ -193,8 +229,11 @@
         "Нормальные, густые, жёсткие / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-13.jpg",
-    "sourcePage": 13
+    "image": "assets/products/product-13.webp",
+    "sourcePage": 13,
+    "imageWidth": 1067,
+    "imageHeight": 1600,
+    "imageSrcset": "assets/products/product-13-240.webp 240w, assets/products/product-13-480.webp 480w, assets/products/product-13-800.webp 800w, assets/products/product-13.webp 1067w"
   },
   {
     "id": "super-mat-wax",
@@ -208,12 +247,18 @@
       {
         "label": "100 мл",
         "price": 3990,
-        "image": "assets/products/product-14.jpg"
+        "image": "assets/products/product-14.webp",
+        "imageWidth": 672,
+        "imageHeight": 1032,
+        "imageSrcset": "assets/products/product-14-240.webp 240w, assets/products/product-14-480.webp 480w, assets/products/product-14.webp 672w"
       },
       {
         "label": "15 мл",
         "price": 1490,
-        "image": "assets/products/product-14-mini.jpg"
+        "image": "assets/products/product-14-mini.webp",
+        "imageWidth": 342,
+        "imageHeight": 314,
+        "imageSrcset": "assets/products/product-14-mini-240.webp 240w, assets/products/product-14-mini.webp 342w"
       }
     ],
     "specs": [
@@ -230,8 +275,11 @@
         "Все типы / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-14.jpg",
-    "sourcePage": 14
+    "image": "assets/products/product-14.webp",
+    "sourcePage": 14,
+    "imageWidth": 672,
+    "imageHeight": 1032,
+    "imageSrcset": "assets/products/product-14-240.webp 240w, assets/products/product-14-480.webp 480w, assets/products/product-14.webp 672w"
   },
   {
     "id": "muscle-wax",
@@ -245,12 +293,18 @@
       {
         "label": "100 мл",
         "price": 3990,
-        "image": "assets/products/product-15.jpg"
+        "image": "assets/products/product-15.webp",
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "imageSrcset": "assets/products/product-15-240.webp 240w, assets/products/product-15-480.webp 480w, assets/products/product-15-800.webp 800w, assets/products/product-15.webp 1200w"
       },
       {
         "label": "15 мл",
         "price": 1490,
-        "image": "assets/products/product-15-mini.jpg"
+        "image": "assets/products/product-15-mini.webp",
+        "imageWidth": 362,
+        "imageHeight": 306,
+        "imageSrcset": "assets/products/product-15-mini-240.webp 240w, assets/products/product-15-mini.webp 362w"
       }
     ],
     "specs": [
@@ -267,8 +321,11 @@
         "Нормальные и густые / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-15.jpg",
-    "sourcePage": 15
+    "image": "assets/products/product-15.webp",
+    "sourcePage": 15,
+    "imageWidth": 1200,
+    "imageHeight": 1200,
+    "imageSrcset": "assets/products/product-15-240.webp 240w, assets/products/product-15-480.webp 480w, assets/products/product-15-800.webp 800w, assets/products/product-15.webp 1200w"
   },
   {
     "id": "shine-pomade",
@@ -282,7 +339,10 @@
       {
         "label": "100 г",
         "price": 4290,
-        "image": "assets/products/product-16.jpg"
+        "image": "assets/products/product-16.webp",
+        "imageWidth": 883,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-16-240.webp 240w, assets/products/product-16-480.webp 480w, assets/products/product-16-800.webp 800w, assets/products/product-16.webp 883w"
       }
     ],
     "specs": [
@@ -299,8 +359,11 @@
         "Нормальные и густые / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-16.jpg",
-    "sourcePage": 16
+    "image": "assets/products/product-16.webp",
+    "sourcePage": 16,
+    "imageWidth": 883,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-16-240.webp 240w, assets/products/product-16-480.webp 480w, assets/products/product-16-800.webp 800w, assets/products/product-16.webp 883w"
   },
   {
     "id": "volume-curl-cream",
@@ -314,7 +377,10 @@
       {
         "label": "150 мл",
         "price": 3490,
-        "image": "assets/products/product-17.jpg"
+        "image": "assets/products/product-17.webp",
+        "imageWidth": 933,
+        "imageHeight": 933,
+        "imageSrcset": "assets/products/product-17-240.webp 240w, assets/products/product-17-480.webp 480w, assets/products/product-17-800.webp 800w, assets/products/product-17.webp 933w"
       }
     ],
     "specs": [
@@ -331,8 +397,11 @@
         "Волнистые и кудрявые / средние и длинные"
       ]
     ],
-    "image": "assets/products/product-17.jpg",
-    "sourcePage": 17
+    "image": "assets/products/product-17.webp",
+    "sourcePage": 17,
+    "imageWidth": 933,
+    "imageHeight": 933,
+    "imageSrcset": "assets/products/product-17-240.webp 240w, assets/products/product-17-480.webp 480w, assets/products/product-17-800.webp 800w, assets/products/product-17.webp 933w"
   },
   {
     "id": "natural-curl-cream",
@@ -346,7 +415,10 @@
       {
         "label": "150 мл",
         "price": 3490,
-        "image": "assets/products/product-18.jpg"
+        "image": "assets/products/product-18.webp",
+        "imageWidth": 196,
+        "imageHeight": 476,
+        "imageSrcset": "assets/products/product-18.webp 196w"
       }
     ],
     "specs": [
@@ -363,8 +435,11 @@
         "Кудрявые / средние и длинные"
       ]
     ],
-    "image": "assets/products/product-18.jpg",
-    "sourcePage": 18
+    "image": "assets/products/product-18.webp",
+    "sourcePage": 18,
+    "imageWidth": 196,
+    "imageHeight": 476,
+    "imageSrcset": "assets/products/product-18.webp 196w"
   },
   {
     "id": "hair-oil",
@@ -378,7 +453,10 @@
       {
         "label": "100 мл",
         "price": 3290,
-        "image": "assets/products/product-19.jpg"
+        "image": "assets/products/product-19.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-19-240.webp 240w, assets/products/product-19-480.webp 480w, assets/products/product-19-800.webp 800w, assets/products/product-19.webp 1000w"
       }
     ],
     "specs": [
@@ -395,8 +473,11 @@
         "Сухие, жёсткие, непослушные / любая длина"
       ]
     ],
-    "image": "assets/products/product-19.jpg",
-    "sourcePage": 19
+    "image": "assets/products/product-19.webp",
+    "sourcePage": 19,
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-19-240.webp 240w, assets/products/product-19-480.webp 480w, assets/products/product-19-800.webp 800w, assets/products/product-19.webp 1000w"
   },
   {
     "id": "super-spray",
@@ -410,7 +491,10 @@
       {
         "label": "250 мл",
         "price": 3490,
-        "image": "assets/products/product-20.jpg"
+        "image": "assets/products/product-20.webp",
+        "imageWidth": 947,
+        "imageHeight": 1137,
+        "imageSrcset": "assets/products/product-20-240.webp 240w, assets/products/product-20-480.webp 480w, assets/products/product-20-800.webp 800w, assets/products/product-20.webp 947w"
       }
     ],
     "specs": [
@@ -427,8 +511,11 @@
         "Все типы / любая длина"
       ]
     ],
-    "image": "assets/products/product-20.jpg",
-    "sourcePage": 20
+    "image": "assets/products/product-20.webp",
+    "sourcePage": 20,
+    "imageWidth": 947,
+    "imageHeight": 1137,
+    "imageSrcset": "assets/products/product-20-240.webp 240w, assets/products/product-20-480.webp 480w, assets/products/product-20-800.webp 800w, assets/products/product-20.webp 947w"
   },
   {
     "id": "texture-hairspray",
@@ -442,7 +529,10 @@
       {
         "label": "100 мл",
         "price": 2990,
-        "image": "assets/products/product-21.jpg"
+        "image": "assets/products/product-21.webp",
+        "imageWidth": 600,
+        "imageHeight": 600,
+        "imageSrcset": "assets/products/product-21-240.webp 240w, assets/products/product-21-480.webp 480w, assets/products/product-21.webp 600w"
       }
     ],
     "specs": [
@@ -459,8 +549,11 @@
         "Тонкие, без объёма / короткие и средние"
       ]
     ],
-    "image": "assets/products/product-21.jpg",
-    "sourcePage": 21
+    "image": "assets/products/product-21.webp",
+    "sourcePage": 21,
+    "imageWidth": 600,
+    "imageHeight": 600,
+    "imageSrcset": "assets/products/product-21-240.webp 240w, assets/products/product-21-480.webp 480w, assets/products/product-21.webp 600w"
   },
   {
     "id": "hair-cushion",
@@ -474,7 +567,10 @@
       {
         "label": "16 г",
         "price": 3990,
-        "image": "assets/products/product-23.jpg"
+        "image": "assets/products/product-23.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-23-240.webp 240w, assets/products/product-23-480.webp 480w, assets/products/product-23-800.webp 800w, assets/products/product-23.webp 1000w"
       }
     ],
     "specs": [
@@ -491,8 +587,11 @@
         "Смывается обычным шампунем"
       ]
     ],
-    "image": "assets/products/product-23.jpg",
-    "sourcePage": 23
+    "image": "assets/products/product-23.webp",
+    "sourcePage": 23,
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-23-240.webp 240w, assets/products/product-23-480.webp 480w, assets/products/product-23-800.webp 800w, assets/products/product-23.webp 1000w"
   },
   {
     "id": "fixer-mist",
@@ -506,7 +605,10 @@
       {
         "label": "120 мл",
         "price": 3290,
-        "image": "assets/products/product-24.jpg"
+        "image": "assets/products/product-24.webp",
+        "imageWidth": 1066,
+        "imageHeight": 1600,
+        "imageSrcset": "assets/products/product-24-240.webp 240w, assets/products/product-24-480.webp 480w, assets/products/product-24-800.webp 800w, assets/products/product-24.webp 1066w"
       }
     ],
     "specs": [
@@ -523,8 +625,11 @@
         "Мист для волос и кожи головы"
       ]
     ],
-    "image": "assets/products/product-24.jpg",
-    "sourcePage": 24
+    "image": "assets/products/product-24.webp",
+    "sourcePage": 24,
+    "imageWidth": 1066,
+    "imageHeight": 1600,
+    "imageSrcset": "assets/products/product-24-240.webp 240w, assets/products/product-24-480.webp 480w, assets/products/product-24-800.webp 800w, assets/products/product-24.webp 1066w"
   },
   {
     "id": "vitaflex-body-wash",
@@ -538,7 +643,10 @@
       {
         "label": "500 мл",
         "price": 3490,
-        "image": "assets/products/product-26.jpg"
+        "image": "assets/products/product-26.webp",
+        "imageWidth": 299,
+        "imageHeight": 914,
+        "imageSrcset": "assets/products/product-26-240.webp 240w, assets/products/product-26.webp 299w"
       }
     ],
     "specs": [
@@ -555,8 +663,11 @@
         "Масла ши, оливы и миндаля"
       ]
     ],
-    "image": "assets/products/product-26.jpg",
-    "sourcePage": 26
+    "image": "assets/products/product-26.webp",
+    "sourcePage": 26,
+    "imageWidth": 299,
+    "imageHeight": 914,
+    "imageSrcset": "assets/products/product-26-240.webp 240w, assets/products/product-26.webp 299w"
   },
   {
     "id": "acne-body-wash",
@@ -570,7 +681,10 @@
       {
         "label": "500 мл",
         "price": 3490,
-        "image": "assets/products/product-27.jpg"
+        "image": "assets/products/product-27.webp",
+        "imageWidth": 299,
+        "imageHeight": 914,
+        "imageSrcset": "assets/products/product-27-240.webp 240w, assets/products/product-27.webp 299w"
       }
     ],
     "specs": [
@@ -587,8 +701,11 @@
         "Очищение и мягкое отшелушивание"
       ]
     ],
-    "image": "assets/products/product-27.jpg",
-    "sourcePage": 27
+    "image": "assets/products/product-27.webp",
+    "sourcePage": 27,
+    "imageWidth": 299,
+    "imageHeight": 914,
+    "imageSrcset": "assets/products/product-27-240.webp 240w, assets/products/product-27.webp 299w"
   },
   {
     "id": "foam-cleansing",
@@ -602,7 +719,10 @@
       {
         "label": "150 мл",
         "price": 2490,
-        "image": "assets/products/product-28.jpg"
+        "image": "assets/products/product-28.webp",
+        "imageWidth": 1200,
+        "imageHeight": 1200,
+        "imageSrcset": "assets/products/product-28-240.webp 240w, assets/products/product-28-480.webp 480w, assets/products/product-28-800.webp 800w, assets/products/product-28.webp 1200w"
       }
     ],
     "specs": [
@@ -619,8 +739,11 @@
         "Чистая кожа без пересушивания"
       ]
     ],
-    "image": "assets/products/product-28.jpg",
-    "sourcePage": 28
+    "image": "assets/products/product-28.webp",
+    "sourcePage": 28,
+    "imageWidth": 1200,
+    "imageHeight": 1200,
+    "imageSrcset": "assets/products/product-28-240.webp 240w, assets/products/product-28-480.webp 480w, assets/products/product-28-800.webp 800w, assets/products/product-28.webp 1200w"
   },
   {
     "id": "all-in-one-lotion",
@@ -634,7 +757,10 @@
       {
         "label": "153 мл",
         "price": 3990,
-        "image": "assets/products/product-29.jpg"
+        "image": "assets/products/product-29.webp",
+        "imageWidth": 600,
+        "imageHeight": 600,
+        "imageSrcset": "assets/products/product-29-240.webp 240w, assets/products/product-29-480.webp 480w, assets/products/product-29.webp 600w"
       }
     ],
     "specs": [
@@ -651,8 +777,11 @@
         "Увлажнённая и комфортная кожа"
       ]
     ],
-    "image": "assets/products/product-29.jpg",
-    "sourcePage": 29
+    "image": "assets/products/product-29.webp",
+    "sourcePage": 29,
+    "imageWidth": 600,
+    "imageHeight": 600,
+    "imageSrcset": "assets/products/product-29-240.webp 240w, assets/products/product-29-480.webp 480w, assets/products/product-29.webp 600w"
   },
   {
     "id": "all-in-one-cream",
@@ -666,7 +795,10 @@
       {
         "label": "153 мл",
         "price": 3990,
-        "image": "assets/products/product-30.jpg"
+        "image": "assets/products/product-30.webp",
+        "imageWidth": 600,
+        "imageHeight": 600,
+        "imageSrcset": "assets/products/product-30-240.webp 240w, assets/products/product-30-480.webp 480w, assets/products/product-30.webp 600w"
       }
     ],
     "specs": [
@@ -683,8 +815,11 @@
         "Увлажнение и комфорт без тяжести"
       ]
     ],
-    "image": "assets/products/product-30.jpg",
-    "sourcePage": 30
+    "image": "assets/products/product-30.webp",
+    "sourcePage": 30,
+    "imageWidth": 600,
+    "imageHeight": 600,
+    "imageSrcset": "assets/products/product-30-240.webp 240w, assets/products/product-30-480.webp 480w, assets/products/product-30.webp 600w"
   },
   {
     "id": "sun-stick",
@@ -698,7 +833,10 @@
       {
         "label": "19 г",
         "price": 2990,
-        "image": "assets/products/product-31.jpg"
+        "image": "assets/products/product-31.webp",
+        "imageWidth": 1200,
+        "imageHeight": 1440,
+        "imageSrcset": "assets/products/product-31-240.webp 240w, assets/products/product-31-480.webp 480w, assets/products/product-31-800.webp 800w, assets/products/product-31.webp 1200w"
       }
     ],
     "specs": [
@@ -715,8 +853,11 @@
         "Ухаживающий комплекс CICA"
       ]
     ],
-    "image": "assets/products/product-31.jpg",
-    "sourcePage": 31
+    "image": "assets/products/product-31.webp",
+    "sourcePage": 31,
+    "imageWidth": 1200,
+    "imageHeight": 1440,
+    "imageSrcset": "assets/products/product-31-240.webp 240w, assets/products/product-31-480.webp 480w, assets/products/product-31-800.webp 800w, assets/products/product-31.webp 1200w"
   },
   {
     "id": "foot-cream",
@@ -730,7 +871,10 @@
       {
         "label": "70 мл",
         "price": 1990,
-        "image": "assets/products/product-32.jpg"
+        "image": "assets/products/product-32.webp",
+        "imageWidth": 1000,
+        "imageHeight": 1000,
+        "imageSrcset": "assets/products/product-32-240.webp 240w, assets/products/product-32-480.webp 480w, assets/products/product-32-800.webp 800w, assets/products/product-32.webp 1000w"
       }
     ],
     "specs": [
@@ -747,7 +891,10 @@
         "AHA-кислоты, мочевина и масла"
       ]
     ],
-    "image": "assets/products/product-32.jpg",
-    "sourcePage": 32
+    "image": "assets/products/product-32.webp",
+    "sourcePage": 32,
+    "imageWidth": 1000,
+    "imageHeight": 1000,
+    "imageSrcset": "assets/products/product-32-240.webp 240w, assets/products/product-32-480.webp 480w, assets/products/product-32-800.webp 800w, assets/products/product-32.webp 1000w"
   }
 ];});

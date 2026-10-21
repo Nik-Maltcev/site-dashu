@@ -1,0 +1,250 @@
+{
+  "assets/editorial-model.png": {
+    "src": "assets/editorial-model.webp",
+    "width": 1024,
+    "height": 1536,
+    "srcset": "assets/editorial-model-480.webp 480w, assets/editorial-model-768.webp 768w, assets/editorial-model.webp 1024w",
+    "originalBytes": 2266364,
+    "bytes": 66268
+  },
+  "assets/editorial-model-profile.png": {
+    "src": "assets/editorial-model-profile.webp",
+    "width": 1024,
+    "height": 1536,
+    "srcset": "assets/editorial-model-profile-480.webp 480w, assets/editorial-model-profile-768.webp 768w, assets/editorial-model-profile.webp 1024w",
+    "originalBytes": 2593782,
+    "bytes": 134676
+  },
+  "assets/academy-classic.png": {
+    "src": "assets/academy-classic.webp",
+    "width": 1440,
+    "height": 810,
+    "srcset": "assets/academy-classic-480.webp 480w, assets/academy-classic-768.webp 768w, assets/academy-classic.webp 1440w",
+    "originalBytes": 1947976,
+    "bytes": 57730
+  },
+  "assets/academy-texture.png": {
+    "src": "assets/academy-texture.webp",
+    "width": 1440,
+    "height": 810,
+    "srcset": "assets/academy-texture-480.webp 480w, assets/academy-texture-768.webp 768w, assets/academy-texture.webp 1440w",
+    "originalBytes": 2128908,
+    "bytes": 79070
+  },
+  "assets/academy-care.png": {
+    "src": "assets/academy-care.webp",
+    "width": 1440,
+    "height": 810,
+    "srcset": "assets/academy-care-480.webp 480w, assets/academy-care-768.webp 768w, assets/academy-care.webp 1440w",
+    "originalBytes": 1996469,
+    "bytes": 66996
+  },
+  "assets/products/product-08.jpg": {
+    "src": "assets/products/product-08.webp",
+    "width": 1122,
+    "height": 1122,
+    "srcset": "assets/products/product-08-240.webp 240w, assets/products/product-08-480.webp 480w, assets/products/product-08-800.webp 800w, assets/products/product-08.webp 1122w",
+    "originalBytes": 96661,
+    "bytes": 28170
+  },
+  "assets/products/product-09.jpg": {
+    "src": "assets/products/product-09.webp",
+    "width": 1122,
+    "height": 1122,
+    "srcset": "assets/products/product-09-240.webp 240w, assets/products/product-09-480.webp 480w, assets/products/product-09-800.webp 800w, assets/products/product-09.webp 1122w",
+    "originalBytes": 104999,
+    "bytes": 32550
+  },
+  "assets/products/product-10.jpg": {
+    "src": "assets/products/product-10.webp",
+    "width": 1000,
+    "height": 1000,
+    "srcset": "assets/products/product-10-240.webp 240w, assets/products/product-10-480.webp 480w, assets/products/product-10-800.webp 800w, assets/products/product-10.webp 1000w",
+    "originalBytes": 135083,
+    "bytes": 51660
+  },
+  "assets/products/product-11.jpg": {
+    "src": "assets/products/product-11.webp",
+    "width": 1000,
+    "height": 1000,
+    "srcset": "assets/products/product-11-240.webp 240w, assets/products/product-11-480.webp 480w, assets/products/product-11-800.webp 800w, assets/products/product-11.webp 1000w",
+    "originalBytes": 63778,
+    "bytes": 20972
+  },
+  "assets/products/product-12.jpg": {
+    "src": "assets/products/product-12.webp",
+    "width": 832,
+    "height": 999,
+    "srcset": "assets/products/product-12-240.webp 240w, assets/products/product-12-480.webp 480w, assets/products/product-12-800.webp 800w, assets/products/product-12.webp 832w",
+    "originalBytes": 62505,
+    "bytes": 19956
+  },
+  "assets/products/product-13-mini.jpg": {
+    "src": "assets/products/product-13-mini.webp",
+    "width": 348,
+    "height": 305,
+    "srcset": "assets/products/product-13-mini-240.webp 240w, assets/products/product-13-mini.webp 348w",
+    "originalBytes": 26195,
+    "bytes": 9568
+  },
+  "assets/products/product-13.jpg": {
+    "src": "assets/products/product-13.webp",
+    "width": 1067,
+    "height": 1600,
+    "srcset": "assets/products/product-13-240.webp 240w, assets/products/product-13-480.webp 480w, assets/products/product-13-800.webp 800w, assets/products/product-13.webp 1067w",
+    "originalBytes": 325269,
+    "bytes": 58332
+  },
+  "assets/products/product-14-mini.jpg": {
+    "src": "assets/products/product-14-mini.webp",
+    "width": 342,
+    "height": 314,
+    "srcset": "assets/products/product-14-mini-240.webp 240w, assets/products/product-14-mini.webp 342w",
+    "originalBytes": 24122,
+    "bytes": 8346
+  },
+  "assets/products/product-14.jpg": {
+    "src": "assets/products/product-14.webp",
+    "width": 672,
+    "height": 1032,
+    "srcset": "assets/products/product-14-240.webp 240w, assets/products/product-14-480.webp 480w, assets/products/product-14.webp 672w",
+    "originalBytes": 144285,
+    "bytes": 47676
+  },
+  "assets/products/product-15-mini.jpg": {
+    "src": "assets/products/product-15-mini.webp",
+    "width": 362,
+    "height": 306,
+    "srcset": "assets/products/product-15-mini-240.webp 240w, assets/products/product-15-mini.webp 362w",
+    "originalBytes": 26012,
+    "bytes": 8838
+  },
+  "assets/products/product-15.jpg": {
+    "src": "assets/products/product-15.webp",
+    "width": 1200,
+    "height": 1200,
+    "srcset": "assets/products/product-15-240.webp 240w, assets/products/product-15-480.webp 480w, assets/products/product-15-800.webp 800w, assets/products/product-15.webp 1200w",
+    "originalBytes": 190886,
+    "bytes": 51734
+  },
+  "assets/products/product-16.jpg": {
+    "src": "assets/products/product-16.webp",
+    "width": 883,
+    "height": 1000,
+    "srcset": "assets/products/product-16-240.webp 240w, assets/products/product-16-480.webp 480w, assets/products/product-16-800.webp 800w, assets/products/product-16.webp 883w",
+    "originalBytes": 189700,
+    "bytes": 88760
+  },
+  "assets/products/product-17.jpg": {
+    "src": "assets/products/product-17.webp",
+    "width": 933,
+    "height": 933,
+    "srcset": "assets/products/product-17-240.webp 240w, assets/products/product-17-480.webp 480w, assets/products/product-17-800.webp 800w, assets/products/product-17.webp 933w",
+    "originalBytes": 76614,
+    "bytes": 20670
+  },
+  "assets/products/product-18.jpg": {
+    "src": "assets/products/product-18.webp",
+    "width": 196,
+    "height": 476,
+    "srcset": "assets/products/product-18.webp 196w",
+    "originalBytes": 13598,
+    "bytes": 11236
+  },
+  "assets/products/product-19.jpg": {
+    "src": "assets/products/product-19.webp",
+    "width": 1000,
+    "height": 1000,
+    "srcset": "assets/products/product-19-240.webp 240w, assets/products/product-19-480.webp 480w, assets/products/product-19-800.webp 800w, assets/products/product-19.webp 1000w",
+    "originalBytes": 67743,
+    "bytes": 21406
+  },
+  "assets/products/product-20.jpg": {
+    "src": "assets/products/product-20.webp",
+    "width": 947,
+    "height": 1137,
+    "srcset": "assets/products/product-20-240.webp 240w, assets/products/product-20-480.webp 480w, assets/products/product-20-800.webp 800w, assets/products/product-20.webp 947w",
+    "originalBytes": 51157,
+    "bytes": 12868
+  },
+  "assets/products/product-21.jpg": {
+    "src": "assets/products/product-21.webp",
+    "width": 600,
+    "height": 600,
+    "srcset": "assets/products/product-21-240.webp 240w, assets/products/product-21-480.webp 480w, assets/products/product-21.webp 600w",
+    "originalBytes": 22283,
+    "bytes": 6352
+  },
+  "assets/products/product-23.jpg": {
+    "src": "assets/products/product-23.webp",
+    "width": 1000,
+    "height": 1000,
+    "srcset": "assets/products/product-23-240.webp 240w, assets/products/product-23-480.webp 480w, assets/products/product-23-800.webp 800w, assets/products/product-23.webp 1000w",
+    "originalBytes": 76297,
+    "bytes": 20842
+  },
+  "assets/products/product-24.jpg": {
+    "src": "assets/products/product-24.webp",
+    "width": 1066,
+    "height": 1600,
+    "srcset": "assets/products/product-24-240.webp 240w, assets/products/product-24-480.webp 480w, assets/products/product-24-800.webp 800w, assets/products/product-24.webp 1066w",
+    "originalBytes": 109021,
+    "bytes": 22380
+  },
+  "assets/products/product-26.jpg": {
+    "src": "assets/products/product-26.webp",
+    "width": 299,
+    "height": 914,
+    "srcset": "assets/products/product-26-240.webp 240w, assets/products/product-26.webp 299w",
+    "originalBytes": 75095,
+    "bytes": 23194
+  },
+  "assets/products/product-27.jpg": {
+    "src": "assets/products/product-27.webp",
+    "width": 299,
+    "height": 914,
+    "srcset": "assets/products/product-27-240.webp 240w, assets/products/product-27.webp 299w",
+    "originalBytes": 86860,
+    "bytes": 33420
+  },
+  "assets/products/product-28.jpg": {
+    "src": "assets/products/product-28.webp",
+    "width": 1200,
+    "height": 1200,
+    "srcset": "assets/products/product-28-240.webp 240w, assets/products/product-28-480.webp 480w, assets/products/product-28-800.webp 800w, assets/products/product-28.webp 1200w",
+    "originalBytes": 101475,
+    "bytes": 17820
+  },
+  "assets/products/product-29.jpg": {
+    "src": "assets/products/product-29.webp",
+    "width": 600,
+    "height": 600,
+    "srcset": "assets/products/product-29-240.webp 240w, assets/products/product-29-480.webp 480w, assets/products/product-29.webp 600w",
+    "originalBytes": 66447,
+    "bytes": 13562
+  },
+  "assets/products/product-30.jpg": {
+    "src": "assets/products/product-30.webp",
+    "width": 600,
+    "height": 600,
+    "srcset": "assets/products/product-30-240.webp 240w, assets/products/product-30-480.webp 480w, assets/products/product-30.webp 600w",
+    "originalBytes": 31739,
+    "bytes": 9110
+  },
+  "assets/products/product-31.jpg": {
+    "src": "assets/products/product-31.webp",
+    "width": 1200,
+    "height": 1440,
+    "srcset": "assets/products/product-31-240.webp 240w, assets/products/product-31-480.webp 480w, assets/products/product-31-800.webp 800w, assets/products/product-31.webp 1200w",
+    "originalBytes": 252353,
+    "bytes": 72842
+  },
+  "assets/products/product-32.jpg": {
+    "src": "assets/products/product-32.webp",
+    "width": 1000,
+    "height": 1000,
+    "srcset": "assets/products/product-32-240.webp 240w, assets/products/product-32-480.webp 480w, assets/products/product-32-800.webp 800w, assets/products/product-32.webp 1000w",
+    "originalBytes": 87418,
+    "bytes": 33696
+  }
+}
