@@ -1,5 +1,7 @@
 # DASHU interactive prototype
 
+The current landing follows the customer’s October 2026 feedback: a locally hosted Daily Routine video, official campaign photography, an ivory/blue palette with restrained lime accents, four featured products, interactive style moods and Academy guides. `assets/campaign.css` also themes the existing catalogue, cart and stylist. Media provenance is recorded in `assets/campaign/SOURCES.md`.
+
 Chosen monochrome design 06. Static HTML, CSS and JavaScript; no build step. Serve the repository root.
 
 Pages: homepage, 23-product catalogue, product details with volume selection, cart, checkout demo and brand story.
