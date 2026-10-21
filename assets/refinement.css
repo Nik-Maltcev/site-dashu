@@ -1,0 +1,37 @@
+/* Targeted refinements to the original sixth design. Its typography, spacing and layout remain. */
+.dashu-refined{--accent:#ccff00}
+.dashu-refined ::selection{background:var(--accent);color:#0b0b0b}
+.dashu-refined .hero-film{object-position:50% 62%;opacity:.95}
+.hero-film-toggle{position:absolute;right:max(32px,5vw);bottom:95px;z-index:4;width:43px;height:43px;border:1px solid #ffffff80;border-radius:50%;background:#1119;color:white;font-size:15px;backdrop-filter:blur(6px)}
+.hero-film-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.dashu-refined .dark-hero-content>.eyebrow::before{content:'';display:inline-block;width:6px;height:6px;margin-right:11px;background:var(--accent);border-radius:50%;vertical-align:middle}
+.dashu-refined .solid-link:hover .arrow,.dashu-refined .line-link:hover .arrow{color:#697f00}
+.dashu-refined .dark-feature>.eyebrow{color:var(--accent)}
+.dashu-refined .filters button[aria-pressed=true]{border-color:var(--accent)}
+.dashu-refined .identity-story{background:#141414;color:#f4f4f4}
+.dashu-refined .identity-topline{border-color:#383838;color:#999}
+.dashu-refined .identity-copy>.eyebrow{color:#929292}
+.dashu-refined .identity-copy>p{color:#b9b9b9}
+.dashu-refined .identity-bottom>p{color:#969696}
+.dashu-refined .identity-link{border-color:#444}
+.dashu-refined .identity-arrow{border-color:#777}
+.dashu-refined .identity-link:hover .identity-arrow{background:#f4f4f4;color:#111;border-color:#f4f4f4}
+.dashu-refined .identity-photo{background:#1c1c1c}
+.dashu-refined .identity-photo img{object-position:50% 35%}
+.dashu-refined .stylist-photo img{filter:none}
+.refinement-menu-toggle{display:none;border:0;background:none;color:inherit;padding:8px;font-size:22px;line-height:1}
+@media(max-width:760px){
+ .dashu-refined .hero-film{object-position:50% 57%;opacity:.9}
+ .dashu-refined .dark-shade{background:linear-gradient(0deg,#0b0b0b 0%,#0b0b0bf2 16%,#0b0b0b80 48%,#0b0b0b22 75%,#0b0b0b99 100%)}
+ .hero-film-toggle{right:24px;bottom:auto;top:300px;width:38px;height:38px}
+ .dashu-refined .site-nav{position:relative;z-index:10;gap:16px}
+ .refinement-menu-toggle{display:block;order:3}
+ .dashu-refined .site-nav .nav-side{margin-left:auto}
+ .dashu-refined .site-nav nav{display:none;position:absolute;left:-24px;right:-24px;top:100%;padding:18px 24px;background:#101010;border-top:1px solid #333;border-bottom:1px solid #333;z-index:20}
+ .dashu-refined .site-nav nav.mobile-open{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+ .dashu-refined .site-nav nav a:nth-child(n),.dashu-refined .site-nav nav a.desktop-only{display:block;font-size:12px;padding:13px 0}
+ .dashu-refined:has(.product-detail) .stylist-launcher,.dashu-refined:has(.cart-layout) .stylist-launcher,.dashu-refined:has(.checkout-layout) .stylist-launcher{display:none}
+ .dashu-refined .stylist-launcher{width:46px;height:46px;padding:0;justify-content:center;right:18px;bottom:18px;border-radius:50%}
+ .dashu-refined .stylist-launcher>span:not(:first-child){display:none}
+}
+@media(hover:none){.dashu-refined .shop-visual img,.dashu-refined .detail-photo>img{filter:none!important}}
