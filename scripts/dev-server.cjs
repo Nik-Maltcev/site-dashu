@@ -2,7 +2,7 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const handler=require('../api/stylist.js');
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.svg':'image/svg+xml'};
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.mp4':'video/mp4','.ttf':'font/ttf','.woff2':'font/woff2','.svg':'image/svg+xml'};
 function loadKey(){
   const env=path.join(root,'.env.local');if(!fs.existsSync(env))return;
   for(const line of fs.readFileSync(env,'utf8').split(/\r?\n/)){
@@ -20,7 +20,7 @@ http.createServer(async(req,res)=>{
   }
   let relative;
   try{relative=decodeURIComponent(pathname).replace(/^\/+/, '')||'index.html';}catch(_){res.writeHead(400);res.end();return;}
-  if(!/^(?:index|catalog|product|cart|checkout|about|stylist)\.html$/.test(relative)&&!relative.startsWith('assets/')){res.writeHead(404);res.end();return;}
+  if(!/^(?:index|catalog|product|cart|checkout|about|stylist|font-01|font-02)\.html$/.test(relative)&&!relative.startsWith('assets/')){res.writeHead(404);res.end();return;}
   const file=path.resolve(root,relative);
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}
   res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(file).pipe(res);

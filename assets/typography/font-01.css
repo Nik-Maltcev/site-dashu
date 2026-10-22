@@ -1,0 +1,30 @@
+@import url('unbounded.css');
+@import url('onest.css');
+.type-one{--sans:'Onest',Arial,sans-serif;--serif:'Unbounded',Arial,sans-serif;--display:'Unbounded',Arial,sans-serif}
+.type-one .wordmark{font-family:var(--sans);font-weight:800;letter-spacing:-.065em}
+.type-one .dark-hero-content h1{font-family:var(--display);font-size:clamp(47px,5.2vw,78px);font-weight:500;letter-spacing:-.055em;line-height:1.14}
+.type-one .dark-hero-content h1 .serif{font-family:var(--sans);font-weight:400;font-style:normal;font-size:1.02em;letter-spacing:-.04em;line-height:1.12;margin-top:18px}
+.type-one .section-top h2{font:500 clamp(30px,3.15vw,46px)/1.22 var(--display);letter-spacing:-.045em}
+.type-one .dark-feature h2{font:400 31px/1.22 var(--display);letter-spacing:-.04em}
+.type-one .stylist-promo h2{font:500 30px/1.22 var(--display);letter-spacing:-.04em}
+.type-one .stylist-promo h2 em{font:400 1.1em/1.25 var(--sans);letter-spacing:-.025em}
+.type-one .identity-copy h2{font:500 clamp(42px,4.6vw,65px)/1.12 var(--display);letter-spacing:-.045em}
+.type-one .identity-copy h2 em{font:400 .58em/1.25 var(--sans);letter-spacing:-.025em}
+.type-one .academy-heading h2{font:500 clamp(29px,3.1vw,44px)/1.2 var(--display);letter-spacing:-.045em}
+.type-one .academy-heading h2 em{font:400 1.05em/1.2 var(--sans);letter-spacing:-.03em}
+.type-one .pro-band h2{font:500 33px/1.2 var(--display);letter-spacing:-.04em}
+.type-one .ritual-step h3{font-weight:600}
+.type-one .step-number{font:400 38px/1 var(--display)}
+.type-one .partner-dialog h2{font:500 29px/1.2 var(--display);letter-spacing:-.035em}
+@media(max-width:1100px){
+ .type-one .dark-hero-content h1{font-size:57px}.type-one .dark-feature h2{font-size:27px}.type-one .identity-copy h2{font-size:46px}.type-one .pro-band h2{font-size:29px}
+}
+@media(max-width:760px){
+ .type-one .dark-hero-content h1{font-size:clamp(35px,9.1vw,56px);letter-spacing:-.055em;line-height:1.18}
+ .type-one .dark-hero-content h1 .serif{font-size:1.03em;line-height:1.15;margin-top:12px}
+ .type-one .section-top h2{font-size:clamp(23px,6.2vw,35px);letter-spacing:-.045em;line-height:1.3}
+ .type-one .dark-feature h2{font-size:26px}.type-one .stylist-promo h2{font-size:25px}
+ .type-one .identity-copy h2{font-size:46px;line-height:1.12}.type-one .identity-copy h2 em{font-size:.57em}
+ .type-one .academy-heading h2{font-size:26px;line-height:1.3}.type-one .pro-band h2{font-size:27px;line-height:1.25}
+ .type-one .step-number{font-size:29px}
+}
