@@ -5,7 +5,7 @@ Two additional dark landing variants, retaining the current content, composition
 - `/font-01.html`: Unbounded display headings with Onest body and interface text.
 - `/font-02.html`: Manrope headings with Golos Text body and interface text.
 
-Each variant uses two font families. The original `/index.html` and `/concept-light/` remain unchanged. A comparison bar links the two alternatives and the original landing.
+Each variant uses two font families. The original typography remains on `/index.html`, and `/concept-light/` is preserved separately. A comparison bar on the original landing and both alternatives links all three typography options.
 
 Fonts are downloaded from the official Google Fonts CSS API, served locally as WOFF2, and limited to Cyrillic and Latin subsets. Each font's SIL Open Font License is included beside the files.
 
