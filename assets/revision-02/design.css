@@ -21,3 +21,7 @@ dialog{margin:auto;color:var(--ink);background:var(--paper);border:1px solid #a6
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 @media(max-width:760px){.r-ticker,.r-ticker-group,.r-ticker-toggle{height:31px}.r-ticker-message{font-size:9px;gap:28px;padding-right:28px}.r-ticker-message svg{width:10px;height:10px}.r-ticker-toggle svg{width:15px;height:15px}}
+.r-product-rail,.r-product-image,.r-product h3 a{cursor:grab}
+.r-product-rail.is-dragging{scroll-snap-type:none;scroll-behavior:auto;user-select:none}
+.r-product-rail.is-dragging *{cursor:grabbing!important;user-select:none}
+.r-product-image img{-webkit-user-drag:none;user-select:none}

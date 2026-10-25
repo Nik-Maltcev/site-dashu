@@ -38,6 +38,47 @@
     rail.scrollBy({left:Number(b.dataset.railDirection) * distance,behavior:reduce.matches ? 'instant' : 'smooth'});
   }));
   rail.addEventListener('scroll',updatePosition,{passive:true});
+  let drag = null;
+  let suppressDragClick = false;
+  rail.addEventListener('pointerdown',event => {
+    suppressDragClick = false;
+    if (event.pointerType !== 'mouse' || event.button !== 0 || !event.isPrimary || event.target.closest('button,input,select,textarea')) return;
+    drag = {id:event.pointerId,x:event.clientX,y:event.clientY,scroll:rail.scrollLeft,active:false};
+  });
+  window.addEventListener('pointermove',event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const distance = event.clientX - drag.x;
+    if (!drag.active) {
+      if (Math.abs(distance) < 6) return;
+      if (Math.abs(event.clientY - drag.y) > Math.abs(distance)) {drag = null;return;}
+      drag.active = true;
+      rail.classList.add('is-dragging');
+      rail.setPointerCapture(event.pointerId);
+    }
+    event.preventDefault();
+    rail.scrollLeft = drag.scroll - distance;
+  },{passive:false});
+  function finishDrag(event) {
+    if (!drag || (event?.pointerId !== undefined && event.pointerId !== drag.id)) return;
+    const finished = drag;
+    drag = null;
+    if (!finished.active) return;
+    suppressDragClick = true;
+    rail.classList.remove('is-dragging');
+    if (rail.hasPointerCapture(finished.id)) rail.releasePointerCapture(finished.id);
+    updatePosition();
+  }
+  window.addEventListener('pointerup',finishDrag);
+  window.addEventListener('pointercancel',finishDrag);
+  window.addEventListener('blur',() => finishDrag());
+  rail.addEventListener('lostpointercapture',finishDrag);
+  rail.addEventListener('dragstart',event => event.preventDefault());
+  rail.addEventListener('click',event => {
+    if (!suppressDragClick || event.detail === 0) return;
+    suppressDragClick = false;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  },true);
   rail.addEventListener('keydown',event => {
     if (event.target !== rail || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
     event.preventDefault();

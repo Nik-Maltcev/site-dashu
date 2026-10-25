@@ -72,7 +72,7 @@ separator = '<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="cur
 group = '<span class="r-ticker-group">'+''.join('<span class="r-ticker-message">'+message+separator+'</span>' for message in messages)+'</span>'
 ticker = '<div class="r-bluebar"><a href="stylist.html" class="r-ticker" aria-label="DASHU — корейский стайлинг. Подобрать средство со стилистом"><span class="r-ticker-track" aria-hidden="true">'+group+group+'</span></a><button class="r-ticker-toggle" type="button" aria-label="Приостановить бегущую строку" aria-pressed="false">'+icon('pause')+'</button></div>'
 page = re.sub(r'<div class="r-bluebar">.*?</div></div>', ticker, page, count=1)
-page = page.replace('assets/revision-02/design.css?v=1','assets/revision-02/design.css?v=2').replace('assets/revision-02/design.js?v=1','assets/revision-02/design.js?v=2')
+page = page.replace('assets/revision-02/design.css?v=1','assets/revision-02/design.css?v=3').replace('assets/revision-02/design.js?v=1','assets/revision-02/design.js?v=3')
 page=page.replace('<div class="r-brand-photo"><img src="assets/academy-classic.webp" srcset="assets/academy-classic-480.webp 480w, assets/academy-classic-768.webp 768w, assets/academy-classic.webp 1440w" sizes="(max-width:760px) 100vw, 45vw" width="1440" height="810"', '<div class="r-brand-photo"><img src="assets/revision-02/craft.webp" srcset="assets/revision-02/craft-480.webp 480w, assets/revision-02/craft-768.webp 768w, assets/revision-02/craft.webp 1000w" sizes="(max-width:760px) 100vw, 45vw" width="1000" height="1500"')
 import json, subprocess
 data=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./assets/catalog-data.js')))"],cwd=ROOT,encoding='utf-8'))
