@@ -83,4 +83,14 @@
   if (reduce.matches) {video.autoplay = false;video.pause();}
   else video.play().catch(videoState);
   videoState();
+
+  const ticker = document.querySelector('.r-bluebar');
+  const tickerToggle = document.querySelector('.r-ticker-toggle');
+  tickerToggle.hidden = reduce.matches;
+  tickerToggle.addEventListener('click',() => {
+    const paused = ticker.classList.toggle('is-paused');
+    tickerToggle.setAttribute('aria-pressed',String(paused));
+    tickerToggle.setAttribute('aria-label',paused ? 'Запустить бегущую строку' : 'Приостановить бегущую строку');
+    tickerToggle.querySelector('svg').innerHTML = paused ? playIcon : pauseIcon;
+  });
 })();
