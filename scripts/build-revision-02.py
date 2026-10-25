@@ -72,7 +72,7 @@ import json, subprocess
 data=json.loads(subprocess.check_output(['node','-e',"console.log(JSON.stringify(require('./assets/catalog-data.js')))"],cwd=ROOT,encoding='utf-8'))
 mat=next(p for p in data if p['id']=='super-mat-wax')
 page=page.replace('assets/products/product-15-240.webp',mat['image'].replace('.webp','-240.webp'))
-(ROOT/'revision-02.html').write_text(page,encoding='utf-8')
+(ROOT/'revision-02.html').write_text('\n'.join(line.rstrip() for line in page.splitlines())+'\n',encoding='utf-8')
 for name,active in [('font-01.html','01'),('index.html','01')]:
     path=ROOT/name
     text=path.read_text(encoding='utf-8')
