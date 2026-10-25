@@ -1,5 +1,11 @@
 # DASHU interactive prototype
 
+## Client comparison / October 25
+
+`/font-01.html` is the approved Unbounded + Onest baseline. `/revision-02.html` is the separate revision with a muted stone/cobalt palette, sticky blue brand strip, horizontal product catalogue immediately after the hero, earlier guides, larger prices and purchase controls, and a dedicated stylist section. Both pages and the root landing have a two-version comparison switch. The baseline content, layout and media are preserved; only its comparison navigation changed. Existing commerce and stylist pages are shared by the variants.
+
+The revision uses its own `assets/revision-02/design.css` and `design.js`; it does not load or change the baseline's styling. New self-hosted stock video and photography replace the previous campaign in this variant only; media sources are recorded in `assets/revision-02/SOURCES.md`. The small-screen video is 317 KB. Rebuild the page with `python scripts/build-revision-02.py`; this only regenerates the new landing and the comparison bars. The older typography generator intentionally refuses to overwrite the approved comparison baseline once a revision exists.
+
 Typography alternatives are available at `/font-01.html` (Unbounded + Onest) and `/font-02.html` (Manrope + Golos Text), each with two locally hosted font families and a comparison switch. They preserve the current dark landing's composition and content. The main landing and saved light version are not replaced. Sources, licences and rebuild commands are in `assets/typography/SOURCES.md`.
 
 The current landing retains the original sixth design: dark background, original typography, section order and product layout. The former hero portrait is replaced with a locally hosted Daily Routine video; official DASHU photography replaces the generated portrait. `assets/refinement.css` and `assets/refinement.js` contain bounded visual changes and the mobile menu. Media provenance is recorded in `assets/campaign/SOURCES.md`.

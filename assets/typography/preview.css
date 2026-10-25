@@ -5,6 +5,7 @@
 .type-comparebar a[aria-current=page]{border-color:#ccff00;color:#f4f4f4}
 .type-comparebar a:hover{color:#fff;border-color:#777}
 .type-comparebar .pair-short{display:none}
+.type-comparebar.revision-compare a[aria-current=page]{border-color:#eef0e9;color:#111;background:#eef0e9}
 .type-preview em,.type-preview .italic{font-style:normal}
 .type-preview .dark-hero-content>p,.type-preview .dark-feature p,.type-preview .section-top p,.type-preview .ritual-step p,.type-preview .academy-caption p,.type-preview .stylist-promo p{font-size:13px}
 .type-preview .product-card h3{font-size:15px;line-height:1.45}

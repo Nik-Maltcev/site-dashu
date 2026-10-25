@@ -3,6 +3,8 @@ from pathlib import Path
 import re
 
 ROOT=Path(__file__).resolve().parents[1]
+if (ROOT/'revision-02.html').exists():
+    raise SystemExit('Font previews are frozen as comparison baselines. Use build-revision-02.py for the client revision.')
 source=(ROOT/'index.html').read_text(encoding='utf-8')
 assert 'dashu-refined' in source
 source=re.sub(r'<div class="wrap type-comparebar">.*?</nav></div>','',source,flags=re.S)

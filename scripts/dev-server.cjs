@@ -20,7 +20,7 @@ http.createServer(async(req,res)=>{
   }
   let relative;
   try{relative=decodeURIComponent(pathname).replace(/^\/+/, '')||'index.html';}catch(_){res.writeHead(400);res.end();return;}
-  if(!/^(?:index|catalog|product|cart|checkout|about|stylist|font-01|font-02)\.html$/.test(relative)&&!relative.startsWith('assets/')){res.writeHead(404);res.end();return;}
+  if(!/^(?:index|catalog|product|cart|checkout|about|stylist|font-01|font-02|revision-02)\.html$/.test(relative)&&!relative.startsWith('assets/')){res.writeHead(404);res.end();return;}
   const file=path.resolve(root,relative);
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}
   res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(file).pipe(res);
