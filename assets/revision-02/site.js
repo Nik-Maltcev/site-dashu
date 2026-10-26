@@ -1,5 +1,12 @@
 (() => {
   'use strict';
+  if (document.documentElement.classList.contains('graphite-buttons')) {
+    document.querySelectorAll('a[href]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href.startsWith('revision-02.html')) link.setAttribute('href',href.replace('revision-02.html','revision-03.html'));
+      else if (href === 'stylist.html') link.setAttribute('href','stylist.html?buttons=graphite');
+    });
+  }
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const menu = document.querySelector('.r-menu');
   const nav = document.getElementById('revision-nav');

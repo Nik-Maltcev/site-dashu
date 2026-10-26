@@ -1,0 +1,23 @@
+/* Only controls change colour. The blue brand identity remains shared with version 02. */
+.graphite-buttons{--button:#303333;--button-hover:#171a1a;--button-line:#a7aaa2}
+.graphite-buttons .r-button,.graphite-buttons .r-button-light{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .r-button:hover,.graphite-buttons .r-button-light:hover{background:var(--button-hover);border-color:var(--button-hover);color:#fff}
+.graphite-buttons .r-button-outline{background:transparent;border-color:var(--button);color:var(--button)}
+.graphite-buttons .r-button-outline:hover{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .r-product-copy>button{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .r-product-copy>button:hover{background:var(--button-hover);border-color:var(--button-hover);color:#fff}
+.graphite-buttons .r-rail-arrows button:not(:disabled):hover{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .r-stylist-float{background:var(--button);border-color:#ffffff40;color:#fff}
+.graphite-buttons .r-stylist-float:hover{background:var(--button-hover)}
+.graphite-buttons .r-ticker-toggle{background:var(--button);color:#fff}
+.graphite-buttons .academy-collection-link,.graphite-buttons .partner-dialog .solid-link,.graphite-buttons .skip-link{background:var(--button);color:#fff}
+.graphite-buttons .academy-collection-link:hover,.graphite-buttons .partner-dialog .solid-link:hover{background:var(--button-hover)}
+.graphite-buttons .consultation-header button{color:var(--button);border-color:var(--button-line)}
+.graphite-buttons .consultation-header button:hover{background:#d8dbd2}
+.graphite-buttons .composer-row>button,.graphite-buttons .stylist-access button,.graphite-buttons .quick-add{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .composer-row>button:not(:disabled):hover,.graphite-buttons .stylist-access button:hover,.graphite-buttons .quick-add:hover{background:var(--button-hover);border-color:var(--button-hover)}
+.graphite-buttons .stylist-options button{background:#ecede5;border-color:var(--button-line);color:var(--button)}
+.graphite-buttons .stylist-options button:hover{background:var(--button);border-color:var(--button);color:#fff}
+.graphite-buttons .upload-photo svg{stroke:var(--button)}
+.graphite-buttons .photo-preview button,.graphite-buttons .stylist-error button{color:var(--button);border-color:var(--button-line)}
+.graphite-buttons .photo-consent input{accent-color:var(--button)}

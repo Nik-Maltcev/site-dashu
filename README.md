@@ -2,6 +2,8 @@
 
 ## Client comparison / October 25
 
+`/revision-03.html` adds an independent comparison with graphite buttons while retaining version 02's blue brand accents. All three landings have a comparison switch. Links from version 03 open `/stylist.html?buttons=graphite`, which applies the same button palette without changing the default stylist theme or its API. Rebuild in order: `build-revision-02.py`, `build-revision-03.py`, `build-stylist-page.py`.
+
 `/font-01.html` is the approved Unbounded + Onest baseline. `/revision-02.html` is the separate revision with a muted stone/cobalt palette, sticky blue brand strip, horizontal product catalogue immediately after the hero, earlier guides, larger prices and purchase controls, and a dedicated stylist section. Both pages and the root landing have a two-version comparison switch. The baseline content, layout and media are preserved; only its comparison navigation changed. Existing commerce and stylist pages are shared by the variants.
 
 The revision uses its own `assets/revision-02/design.css` and `design.js`; it does not load or change the baseline's styling. New self-hosted stock video and photography replace the previous campaign in this variant only; media sources are recorded in `assets/revision-02/SOURCES.md`. The small-screen video is 317 KB. Rebuild the page with `python scripts/build-revision-02.py`; this only regenerates the new landing and the comparison bars. The older typography generator intentionally refuses to overwrite the approved comparison baseline once a revision exists.

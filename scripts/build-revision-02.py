@@ -20,7 +20,7 @@ def icon(name):
 
 def bar(active):
     links = ''.join(f'<a href="{path}"'+(' aria-current="page"' if key == active else '')+f'>{label}</a>' for key,path,label in [
-        ('01', 'font-01.html', '01 / Исходная'), ('02', 'revision-02.html', '02 / С правками')])
+        ('01', 'font-01.html', '01 / Исходная'), ('02', 'revision-02.html', '02 / С правками'), ('03', 'revision-03.html', '03 / Графит')])
     return '<div class="wrap type-comparebar revision-compare"><span class="type-label">СРАВНИТЬ ВЕРСИИ / UNBOUNDED</span><nav aria-label="Сравнить версии дизайна">'+links+'</nav></div>'
 
 academy = re.search(r'<section class="academy section".*?</section>', original, re.S).group()

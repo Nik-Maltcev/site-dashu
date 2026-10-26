@@ -39,5 +39,7 @@ __FOOTER__
 <div id="store-toast" class="store-toast" role="status" aria-live="polite" hidden></div><script src="assets/catalog-data.js?v=3"></script><script src="assets/store.js?v=2"></script><script src="assets/stylist.js?v=4"></script><script src="assets/revision-02/site.js?v=1"></script></body></html>
 '''
 for key,value in {'HEADER':header,'FOOTER':footer,'CONSULTATION':consultation,'SELECTION':selection,'ARROW':arrow}.items():page=page.replace('__'+key+'__',value)
+page=page.replace('</head>','<link rel="stylesheet" href="assets/revision-02/graphite-buttons.css?v=1"><script>if(new URLSearchParams(location.search).get("buttons")==="graphite")document.documentElement.classList.add("graphite-buttons");</script></head>')
+page=page.replace('assets/revision-02/site.js?v=1','assets/revision-02/site.js?v=2')
 (ROOT/'stylist.html').write_text('\n'.join(line.rstrip() for line in page.splitlines())+'\n',encoding='utf-8')
 print('Updated only stylist.html; consultation controls and request logic preserved.')
